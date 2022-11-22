@@ -1,1 +1,1 @@
-# generation-miniproject
+# generationproject
