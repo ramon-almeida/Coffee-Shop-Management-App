@@ -2,18 +2,13 @@
 
 -Requirements
 
-•Maintain a collection of products and couriers.
-•When a customer makes a new order, create this on the system.
-•To be able to update the status of an order i.e: preparing, out-for-delivery, delivered.
-•When I exit my app, all data haveto be persisted and not lost.
-•When I start my app, I need to load all persisted data.
+•To be able to create and update data as products, couriers and orders
+•All data have to be persisted and not lost, and load all persisted data when you run the app
 •To be sure my app has been tested and proven to work well.
-•To receive regular software updates.
+
 ##########################################################################################
 -How did your design go about meeting the project's requirements?
 
-•When we start my application, all saved data is loaded and available.
-•When we exit my application, all data that has been added or modified is automatically saved.
 •So far, I have created the code to meet all the requirements of creating new products, curiers and orders, and also modify each of them.
 •I have also created 3 CVS files to keep the data of products, couriers and orders in these files
 •If the user creates a new product, courier or order, or modifies any of these, it is automatically added to the corresponding file.
