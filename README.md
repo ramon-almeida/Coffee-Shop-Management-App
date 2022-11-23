@@ -24,6 +24,7 @@
 ##########################################################################################
 -If you had more time, what is one thing you would improve upon?
 
+•Organize files in folders like src, data and test and move functions from main-project file to functions file
 •My idea is to create more functions to test requirements such as, adding data to CVS file and modifying them.
 
 ##########################################################################################
