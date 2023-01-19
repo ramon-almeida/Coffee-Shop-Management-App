@@ -11,7 +11,7 @@ def product_menu_options():                                                     
 class TestProduct_menu(unittest.TestCase):
     
      def setUp(self):
-        self.user_input = 1
+        self.user_input = 2
      
      def test_product_menu_options(self):
         
