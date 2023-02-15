@@ -1,6 +1,8 @@
-                                                                                
-import csv                                                                                       
-import tabulate    
+import csv
+import tabulate
+                                                                       
+                                                                                   
+
 ###################################################################################################     
 def save_products():                                                                              #
     product_field = ["name",                                                                      #
