@@ -20,7 +20,7 @@
 -  I have done 3 unit tests for each menu and expect input.
 
 
-> If you had more time, what is one thing you would improve upon?If you had more time, what is one thing you would improve upon?
+> What is one thing you would improve upon?
 
 - Connect to an instance of the SQL Server Database Engine
 - To create more functions to test requirements such as, adding data to CVS file and modifying them.
