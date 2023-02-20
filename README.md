@@ -26,6 +26,3 @@
 - To create more functions to test requirements such as, adding data to CVS file and modifying them.
 
 
-> -What did you most enjoy implementing?
-
-- I really enjoyed implementing tabulate module to display list of products, couriers and orders in tablet format.
