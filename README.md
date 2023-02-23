@@ -1,33 +1,65 @@
-######  A Cafe Order Menu System for managing products, couriers and orders in a CLI interface using Python. Client Requirements included:
+# Cafe Orders System with Dockerised MySQL Database
+This is a Cafe Orders System built using Python that allows you to manage products, couriers, and orders in a cafe setting. The program is equipped with a Command Line Interface (CLI) and uses a Dockerised MySQL database to store and retrieve data. The program allows you to add, view, update, and remove products, orders, and couriers.
 
-- CLI navigable main menu to reach submenus for Products, Order and Courier operations
-- Ability to print, add, update/amend and remove: Products, Orders, Couriers
-- Commit data structures containing Product, Order and Courier information to files
-- Products Attributes include: Name, Price
-- Order Attributes include: Name, Address, Telephone, Items, Courier, Order Status, ID
-- Courier Attributes include: Name, Orders
+
+#####   Products
+- View a list of all products
+- Add a new product
+- Update an existing product
+- Remove a product
+#####  Orders
+- View a list of all orders
+- Add a new order
+- Update an existing order
+- Remove an order
+- Sort orders by different attributes
+##### Couriers
+- View a list of all couriers
+- Add a new courier
+- Update an existing courier
+- Remove a courier
+
+
+## Data Structure
+The program stores the information for products, orders, and couriers in a MySQL database. Each object is represented by a table containing the relevant attributes.
+
+##### Products
+id: integer (primary key)
+name: string
+price: float
+##### Orders
+id: integer (primary key)
+name: string
+address: string
+telephone: string
+courier: string (foreign key to couriers table)
+order_status: string
+order_total: float
+##### Couriers
+id: integer (primary key)
+name: string
 
 ------------
+### How to Install and Run the Project
+###### Prerequisites
+- Docker
+- Docker Compose
 
+###### Installation Steps
+- Clone this repository to your local machine.
+- Navigate to the root directory of the cloned repository.
+- Run the command docker-compose up in your terminal. This will start the MySQL database and the Python program.
+- Open a new terminal window and navigate to the same directory.
+- Run the command docker-compose exec app python main.py to run the program.
+- You can now use the CLI interface to manage products, orders, and couriers.
+- Approach
+- The program was built using functional programming, with each menu and submenu housed in its own function wrapper. Recursion was used to navigate between different menu functions. The program uses the MySQL connector module to interact with the Dockerised MySQL database.1.
 
-###### Initial client requirements have been built up from products, couriers and orders represented by lists of strings saved to *.txt files, to representation using lists of dictionaries stored in csv files. Updates to the requirements provided the context for additional attributes, menu recursion and new r/w protocols. Additional Stretch and Bonus features fulfilled include:
+#### Stretch and Bonus Features
+Additional features added to the program include:
+Sorting of orders by all attributes
+Menu recursion
+Deletion, updates, and addition for all object types
 
-- So far, I have created the code to meet all the requirements of creating new products, curiers and orders, and also modify each of them.
-- I have also created 3 CVS files to keep the data of products, couriers and orders in these files
-- If the user creates a new product, courier or order, or modifies any of these, it is automatically added to the corresponding file.
-
-
-> -How did you guarantee the client requirements?
-
--  I have done 3 unit tests for each menu and expect input.
-
-
-> If you had more time, what is one thing you would improve upon?If you had more time, what is one thing you would improve upon?
-
-- Connect to an instance of the SQL Server Database Engine
-- To create more functions to test requirements such as, adding data to CVS file and modifying them.
-
-
-> -What did you most enjoy implementing?
-
-- I really enjoyed implementing tabulate module to display list of products, couriers and orders in tablet format.
+#### Conclusion
+This program provides a CLI interface for managing products, couriers, and orders in a cafe setting. It uses a Dockerised MySQL database to store and retrieve data. The program is built using Python and follows a functional programming approach. The data structures for products, orders, and couriers are represented by MySQL tables. The program also includes several additional features, such as sorting and recursive menus.
